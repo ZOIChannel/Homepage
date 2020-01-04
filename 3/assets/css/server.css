@@ -43,9 +43,9 @@
 
 .servers {
     padding-top: 126px;
-    padding-bottom: 205px;
+    /*padding-bottom: 205px;*/
     width: 100%;
-    height: 100%;
+    height: calc(100% - 152px);
     background-image: url("/assets/img/dirt/black_dirt.png");
 }
 

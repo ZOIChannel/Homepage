@@ -20,7 +20,14 @@
     src: url(''), url('') format('opentype'), url('/assets/fonts/logotype/logotypejp_mp_b_1.1.ttf') format('truetype'), url('') format('woff');
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     font-family: "LogotypeM";
 }
 
@@ -30,6 +37,8 @@ ol {
 }
 
 .main {
+    width: 100%;
+    height: 100%;
     font-size: 20px;
     margin-top: 64px;
     background-image: url("/assets/img/dirt/white_dirt.png");
