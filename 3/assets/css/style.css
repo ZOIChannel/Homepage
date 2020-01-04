@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'Minecraft';
     src: url('/assets/fonts/minecraft/minecraft_font.eot'), url('/assets/fonts/minecraft/minecraft_font.otf') format('opentype'), url('/assets/fonts/minecraft/minecraft_font.ttf') format('truetype'), url('/assets/fonts/minecraft/minecraft_font.woff') format('woff');
