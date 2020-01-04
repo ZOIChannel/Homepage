@@ -1,0 +1,30 @@
+.console_elia {
+    background: #000000;
+}
+
+.console {
+    display: flex;
+    justify-content: center;
+}
+
+.console p {
+    color: #ffffff;
+    font-size: 64px;
+    font-family: monospace;
+    letter-spacing: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 40px solid;
+    margin: 10px auto 10px auto;
+}
+
+.console .console_text {
+    width: 0;
+    animation: type 1.6s steps(11, end) 1000ms forwards;
+}
+
+@keyframes type {
+    to {
+        width: 480px;
+    }
+}

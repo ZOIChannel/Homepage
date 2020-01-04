@@ -1,0 +1,59 @@
+doctype html
+html(lang="ja")
+    head
+        include assets/pages/parts/head.pug
+        title ZOI-トップページ
+    body
+        include assets/pages/parts/header.pug
+        .main
+            .main-text
+                h1.center 更新とお知らせ
+                ul
+                    li.log
+                        span.date 2019/12/19
+                        span "Logecticsで世界統一"のModデータ更新
+                    li.log
+                        span.date 2019/11/11
+                        span パソコン組んだ
+
+                h1 自己紹介
+                hr
+                p 自作パソコン・プログラミング・ゲーム(主にMinecraft)をしている一般人。<br> ↓↓↓ 興味があればとりあえずこのDiscord鯖にGo! ↓↓↓
+                a.button(href="#") →→→→→Discord鯖に参加する←←←←←
+
+                h1 ZOIの活動場所一覧
+                hr
+                p 是非全てのページを訪れてみてください!
+                .longcard
+                    .longcard-image(style="background-image: url(assets/img/logo/Youtube/youtube_social_square_white.png);" alt="____")
+                    .longcard-texts
+                        .longcard-text
+                            h2 Youtube
+                            p 時々動画投稿してる。<br>投稿頻度が遅いのは許して...
+                        .longcard-button
+                            a.button(href="") Let's Go!!!
+                .longcard
+                    .longcard-image(style="background-image: url(assets/img/logo/Twitter/Twitter_Logo_WhiteOnBlue.png);" alt="____")
+                    .longcard-texts
+                        .longcard-text
+                            h2 Twitter
+                            p いろんな情報が飛びかってるSNS。<br>あんまりツイートしてないけどフォローよろしく!
+                        .longcard-button
+                            a.button(href="") Let's Go!!!
+                .longcard
+                    .longcard-image(style="background-image: url(assets/img/img.png);" alt="____")
+                    .longcard-texts
+                        .longcard-text
+                            h2 Discord
+                            p グループチャットできるやつ。<br>イベントとかはここでやるつもり。
+                        .longcard-button
+                            a.button(href="") Let's Go!!!
+                .longcard
+                    .longcard-image(style="background-image: url(assets/img/logo/Github/GitHub-Mark-120px-plus.png);" alt="____")
+                    .longcard-texts
+                        .longcard-text
+                            h2 Github
+                            p ZOIが作ったプログラムやらmodやらを公開してるとこ。<br>酷いコードだからアドバイスをしてくれ~
+                        .longcard-button
+                            a.button(href="") Let's Go!!!
+        include assets/pages/parts/footer.pug
