@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Minecraft';
     font-display: swap;
-    src: url('/assets/fonts/minecraft/minecraft_font.ttf') format('truetype');
+    src: url('/assets/fonts/minecraft/minecraft_font.otf') format('opentype'), url('/assets/fonts/minecraft/minecraft_font.ttf') format('truetype');
 }
 
 html {
