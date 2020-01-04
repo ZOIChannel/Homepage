@@ -107,7 +107,7 @@
 }
 
 .server_members {
-    height: 40;
+    height: 40px;/*!!!!!!!*/
     float: right;
     display: inline-table;
     text-align: right;
