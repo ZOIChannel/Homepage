@@ -13,6 +13,7 @@
 
 body {
     font-family: "LogotypeM";
+    font-weight: 100;
 }
 
 ul,
@@ -97,6 +98,16 @@ header * {
 
 .longcard {
     font-size: 20px;
+}
+
+.wrapflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
 }
 
 
