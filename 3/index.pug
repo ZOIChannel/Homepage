@@ -27,64 +27,26 @@ html(lang="ja")
                 h1 ZOIの活動一覧
                 hr
                 p 是非全てのページを訪れてみてください!
-                #carouselExampleIndicators.carousel.slide(data-ride="carousel")
-                    ol.carousel-indicators
-                        li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
-                        li(data-target="#carouselExampleIndicators" data-slide-to="1")
-                        li(data-target="#carouselExampleIndicators" data-slide-to="2")
-                    .carousel-inner
-                        .carousel-item.active
-                            img.d-block.w-50(src="/assets/img/logo/Youtube/youtube_social_square_white.png" alt="...")
-                        .carousel-item
-                            img.d-block.w-50(src="/assets/img/logo/Twitter/Twitter_Logo_WhiteOnBlue.png" alt="...")
-                        .carousel-item
-                            img.d-block.w-50(src="/assets/img/logo/Github/GitHub-Mark-120px-plus.png" alt="...")
-                    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
-                        span.carousel-control-prev-icon(aria-hidden="true")
-                        span.sr-only Previous
-                    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
-                        span.carousel-control-next-icon(aria-hidden="true")
-                        span.sr-only Next
-
-
-                .media
-                    img.mr-3(src="/assets/img/logo/Youtube/youtube_social_square_white.png" alt="Generic placeholder image" style="width:150px;")
-                    .media-body.align-self-center
-                        h2.mt-0 Youtube
-                        p 時々動画投稿してる。
-                        p.mb-0 投稿頻度が遅いのは許して...
-
-                .wrapflex
-                    .card
-                        img.card-img-top.d-flex.align-self-center(src="assets/img/logo/Youtube/youtube_social_square_white.png" alt="Youtube" style="width:180px;")
-                        .card-body
-                            h4.card-title Youtube
-                            p.card-text 時々動画投稿してる。<br>投稿頻度が遅いのは許して...
-                            a.btn.btn-primary(href="index.html#!") Let's Go!!!
-                    
-                
-                .longcard
-                    .longcard-image(style="background-image: url(assets/img/logo/Twitter/Twitter_Logo_WhiteOnBlue.png);" alt="____")
-                    .longcard-texts
-                        .longcard-text
-                            h2 Twitter
-                            p いろんな情報が飛びかってるSNS。<br>あんまりツイートしてないけどフォローよろしく!
-                        .longcard-button
-                            a.button(href="") Let's Go!!!
-                .longcard
-                    .longcard-image(style="background-image: url(assets/img/logo/Discord/Discord-Logo-Color.png);" alt="____")
-                    .longcard-texts
-                        .longcard-text
-                            h2 Discord
-                            p グループチャットできるやつ。<br>イベントとかはここでやるつもり。
-                        .longcard-button
-                            a.button(href="") Let's Go!!!
-                .longcard
-                    .longcard-image(style="background-image: url(assets/img/logo/Github/GitHub-Mark-120px-plus.png);" alt="____")
-                    .longcard-texts
-                        .longcard-text
-                            h2 Github
-                            p ZOIが作ったプログラムやらmodやらを公開してるとこ。<br>酷いコードだからアドバイスをしてくれ~
-                        .longcard-button
-                            a.button(href="") Let's Go!!!
+                .container
+                    .row
+                        .card.col-lg-3.rounded
+                            img.card-img(src="/assets/img/logo/Youtube/youtube_social_square_white.png" alt="Card image")
+                            div.card-img-overlay
+                                h4.card-title Youtube
+                                p.card-text 時々動画投稿してる。
+                        .card.col-lg-3.rounded
+                            img.card-img(src="/assets/img/logo/Twitter/Twitter_Logo_WhiteOnBlue.png" alt="Card image")
+                            div.card-img-overlay
+                                h4.card-title Twitter
+                                p.card-text あんまりツイートしてない。
+                        .card.col-lg-3.rounded
+                            img.card-img(src="/assets/img/logo/Discord/Discord-Logo-Color.png" alt="Card image")
+                            div.card-img-overlay
+                                h4.card-title Discord
+                                p.card-text 今過疎中...
+                        .card.col-lg-3.rounded
+                            img.card-img(src="/assets/img/logo/Github/GitHub-Mark-120px-plus.png" alt="Card image")
+                            div.card-img-overlay
+                                h4.card-title Github
+                                p.card-text mod公開場。
         include assets/pages/parts/footer.pug
