@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LogotypeM';
+    font-display: swap;
+    src: url('/assets/fonts/logotype/logotypejp_mp_m_1.1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LogotypeB';
+    font-display: swap;
+    src: url('/assets/fonts/logotype/logotypejp_mp_b_1.1.ttf') format('truetype');
+}
+
+body {
+    font-family: "LogotypeM";
+    font-weight: 100;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.main {
+    font-size: 20px;
+    margin-top: 64px;
+    background-image: url("/assets/img/dirt/white_dirt.png");
+}
+
+.main-text {
+    margin: 0 25px;
+    padding: 25px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.date {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 15px;
+    color: whitesmoke;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.log {
+    padding: 5px 0;
+    /*width: 500px;*/
+}
+
+.space {
+    margin-left: 35px;
+    padding-left: 15px;
+}
+
+.leftbar {
+    border-left: solid rgb(128, 128, 128);
+}
+
+.h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textSmall {
+    font-size: small;
+    font-weight: 100;
+}
+
+.clear {
+    clear: both;
+}
+
+header,
+header * {
+    z-index: 2;
+}
+
+.footer {
+    width: 97.5%;
+    height: 50px;
+    padding-right: 2.5%;
+    color: white;
+    text-align: end;
+    line-height: 50px;
+    background-color: black;
+}
+
+.console p {
+    font-family: 'Menlo';
+}
+
+.longcard {
+    font-size: 20px;
+}
+
+.wrapflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 15px;
+}
+
+
+/*
+.footer_follow {
+    float: left;
+}
+*/
+
+
+/*
+.footer-title {
+    margin: 15px;
+    font-size: 75px;
+    line-height: 150px;
+}
+*/

@@ -1,0 +1,2 @@
+convert -layers optimize -loop 0 -delay 14 *.png anim.gif
+(Use ImageMagick)

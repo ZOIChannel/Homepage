@@ -1,0 +1,35 @@
+doctype html
+html(lang="ja")
+    head
+        include parts/head.pug
+        title ZOI-Computer
+    body
+        include parts/header.pug
+        .main
+            .main-text
+                h1 パソコン
+                hr
+                h2 デスクトップ型
+                .space
+                    h3 ポッキー(白)
+                    .space.leftbar
+                        p 初めて組んだ自作パソコンで、最も性能が高いです。メインPCです。<br>2019/11/11に組んだのでポッキーです。よろしく。
+                        details
+                            summary.h4 部品一覧
+                            table
+                                tr.textLeft.textSmall
+                                    th 部品名
+                                    th 購入価格
+                                    th 購入日
+                                tr.textLeft.textSmall
+                                    th 
+                                    th 
+                                    th 
+                        details
+                            summary.h4 このPCに関する動画一覧
+                            table
+                                ul
+                                    li.log
+                                        span.date 2020/00/00
+                                        a(href="") 
+        include parts/footer.pug

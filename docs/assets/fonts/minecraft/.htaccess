@@ -1,0 +1,4 @@
+header add Access-Control-Allow-Origin *
+<ifmodule mod_mime.c="">
+    AddType font/truetype         .ttf
+</ifmodule>
