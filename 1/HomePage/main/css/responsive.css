@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@media (max-width: 1024px) {
+    /*タブレット*/
+    .main-visual{
+        width: 100%;
+        background-size: cover;
+    }
+    .mods-card{
+        width: 50%;
+        height: 100%;
+    }
+    .mod-card{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 670px) {
+    /*スマホ*/
+    .header-left {
+        display: none;
+    }
+    .header-right {
+        float: none;
+        text-align: center;
+    }
+    .main-visual{
+        width: max-content;
+        height: max-content;
+        box-align: center;
+        background-size: cover;
+    }
+    .mods-card{
+        width: auto;
+        height: auto;
+    }
+    .mods-card-inner{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    .mod-card{
+        margin-bottom: 50px;
+        width: auto;
+        height: auto;
+    }
+}
