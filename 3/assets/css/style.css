@@ -23,7 +23,7 @@ ol {
 
 .main {
     font-size: 20px;
-    margin-top: 64px;
+    margin-top: 56px;
     background-image: url("/assets/img/dirt/white_dirt.png");
 }
 
@@ -50,6 +50,8 @@ ol {
     /*width: 500px;*/
 }
 
+
+/*
 .space {
     margin-left: 35px;
     padding-left: 15px;
@@ -57,13 +59,15 @@ ol {
 
 .leftbar {
     border-left: solid rgb(128, 128, 128);
-}
+}*/
 
 .h4 {
     font-size: 20px;
     font-weight: 700;
 }
 
+
+/*
 .textLeft {
     text-align: left;
 }
@@ -76,14 +80,15 @@ ol {
 .clear {
     clear: both;
 }
+*/
 
 header,
 header * {
     z-index: 2;
 }
 
-.footer {
-    width: 97.5%;
+footer {
+    width: 100%;
     height: 50px;
     padding-right: 2.5%;
     color: white;
@@ -92,6 +97,8 @@ header * {
     background-color: black;
 }
 
+
+/*
 .console p {
     font-family: 'Menlo';
 }
@@ -105,10 +112,14 @@ header * {
     flex-wrap: wrap;
     justify-content: center;
 }
+*/
 
+
+/*
 .card {
     margin: 15px;
 }
+*/
 
 
 /*
@@ -125,3 +136,7 @@ header * {
     line-height: 150px;
 }
 */
+
+.stress {
+    filter: drop-shadow(5px 5px 0 #00000044);
+}
