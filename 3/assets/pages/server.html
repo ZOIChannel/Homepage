@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143297596-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-143297596-3');
+    </script>
+    <script data-ad-client="ca-pub-4789224006125329" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--link(rel="stylesheet" href="/assets/css/ZOIs-CSS_0.0.3.css")-->
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <script src="/assets/bootstrap-4.4.1-dist/jquery-3.4.1.slim.min.js"></script>
+    <script src="/assets/bootstrap-4.4.1-dist/popper.min.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <script src="/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/server.css">
+    <script type="text/javascript" src="/assets/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/server/server.js"></script>
+    <script type="text/javascript" src="/assets/js/server/buttons.js"></script>
+    <title>ZOI-server</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--
+    ul.header
+        li.header__item
+            a.init-bottom(href="#") Activitys
+            ul.header__level2
+                li
+                    a(href="/assets/pages/youtube.html") Youtube
+                li
+                    a(href="/assets/pages/mods.html") Mods
+                li
+                    a(href="/assets/pages/computer.html") Computer
+        li.header__item
+            a(href="/assets/pages/server.html") Server
+        li.header__item
+            a(href="/index.html") Home
+        .header__img(style="background-image: url(/assets/img/ZOI_64x64.png);" alt="____")
+            a(href="/index.html")
+    -->
+    <div class="main">
+      <div class="server-top">Play&nbsp;&nbsp;Multiplayer</div>
+      <div class="servers">
+        <div class="server">
+          <div class="server_favicon" id="server_favicon_1"><img class="favicon" src="/assets/img/server/defult.png"></div>
+          <div class="server_lines">
+            <div class="server_line server_line_1">mc.hypixel.net
+              <div class="server_members" id="server_line_1-1"><img class="radio" src="/assets/img/server/anim/anim.gif" align="right"></div>
+            </div>
+            <div class="server_line server_line_2" id="server_line_1-2">aaaaa</div>
+            <div class="server_line server_line_3" id="server_line_1-3">bbbbb</div>
+          </div>
+        </div>
+        <div class="server">
+          <div class="server_favicon" id="server_favicon_2"><img class="favicon" src="/assets/img/server/defult.png"></div>
+          <div class="server_lines">
+            <div class="server_line server_line_1">play.minecraft.jp
+              <div class="server_members" id="server_line_2-1"><img class="radio" src="/assets/img/server/anim/anim.gif" align="right"></div>
+            </div>
+            <div class="server_line server_line_2" id="server_line_2-2">aaaaa</div>
+            <div class="server_line server_line_3" id="server_line_2-3">bbbbb</div>
+          </div>
+        </div>
+        <div class="server">
+          <div class="server_favicon" id="server_favicon_3"><img class="favicon" src="/assets/img/server/defult.png"></div>
+          <div class="server_lines">
+            <div class="server_line server_line_1">pechi.jp
+              <div class="server_members" id="server_line_3-1"><img class="radio" src="/assets/img/server/anim/anim.gif" align="right"></div>
+            </div>
+            <div class="server_line server_line_2" id="server_line_3-2">aaaaa</div>
+            <div class="server_line server_line_3" id="server_line_3-3">bbbbb</div>
+          </div>
+        </div>
+      </div>
+      <div class="server-bottom">
+        <div class="server_buttons">
+          <div class="server_button">
+            <div class="server_button_L" onclick="JoinServer()">Join&nbsp;&nbsp;Server</div>
+            <div class="server_button_L" onclick="DirectConnect()">Direct&nbsp;&nbsp;Connect</div>
+            <div class="server_button_L" onclick="AddServer()">Add&nbsp;&nbsp;server</div>
+          </div><br>
+          <div class="server_button">
+            <div class="server_button_S" onclick="Edit()">Edit</div>
+            <div class="server_button_S" onclick="Delete()">Delete</div>
+            <div class="server_button_S" onclick="Refresh()">Refresh</div>
+            <div class="server_button_S" onclick="Cancel()">Cancel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

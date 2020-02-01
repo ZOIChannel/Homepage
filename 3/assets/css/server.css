@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Minecraft';
+    font-display: swap;
+    src: url('/assets/fonts/minecraft/minecraft_font.otf') format('opentype'), url('/assets/fonts/minecraft/minecraft_font.ttf') format('truetype');
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.Multi {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.server-top {
+    z-index: 1;
+    font-family: "Minecraft";
+    font-size: 25px;
+    color: white;
+    position: fixed;
+    top: 64px;
+    width: 100%;
+    height: 40px;
+    padding-top: 80px;
+    background-image: url("/assets/img/dirt/brown_dirt.png");
+    text-align: center;
+}
+
+.server-bottom {
+    font-family: "Minecraft";
+    font-size: 22.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 164px;
+    background-image: url("/assets/img/dirt/brown_dirt.png");
+}
+
+.server {
+    font-family: "Minecraft";
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    width: 64%;
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.servers {
+    padding-top: 126px;
+    /*padding-bottom: 205px;*/
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/dirt/black_dirt.png");
+}
+
+.server_favicons {
+    width: 130px;
+    height: 130px;
+}
+
+.server_favicon {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+
+.favicon {
+    width: 120px;
+    height: 120px;
+}
+
+.server_lines {
+    width: calc(100% - 140px);
+    margin: 5px;
+}
+
+.server_line {
+    height: 40px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: calc(sin32px);
+}
+
+.server_line_1 {
+    color: #ffffff;
+}
+
+.server_line_2 {
+    color: #aaaaaa;
+}
+
+.server_line_3 {
+    color: #303030;
+}
+
+.server_line_2>span {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: scrollAnime 15s linear infinite;
+}
+
+@keyframes scrollAnime {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.server_members {
+    height: 40px;
+    /*!!!!!!!*/
+    float: right;
+    display: inline-table;
+    text-align: right;
+}
+
+.radio {
+    height: 24px;
+    margin: 8px;
+}
+
+.server_buttons {
+    color: #ffffff;
+    line-height: 50px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.server_button {
+    display: inline-flex;
+}
+
+.server_button_L {
+    background-color: #6f6f6f;
+    margin: 10px 10px;
+    width: 270px;
+    height: 50px;
+    border-top: 3px solid #ababab;
+    border-left: 3px solid #ababab;
+    border-right: 3px solid #565656;
+    border-bottom: 3px solid #565656;
+}
+
+.server_button_S {
+    background-color: #6f6f6f;
+    margin: 10px 15px;
+    width: 190px;
+    height: 50px;
+    border-top: 3px solid #ababab;
+    border-left: 3px solid #ababab;
+    border-right: 3px solid #565656;
+    border-bottom: 3px solid #565656;
+}
