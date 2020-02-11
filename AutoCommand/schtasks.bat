@@ -3,4 +3,4 @@ git pull
 git add .
 git commit -m "======= autoweb ======="
 git push
-git ftp init -v
+git ftp push
