@@ -7,11 +7,24 @@ html(lang="ja")
         include parts/header.pug
         .main
             .main-text
-                h1 Mod
+                h1 Mods
                 hr
-                ul
-                    th
-                        h2 SAOmod
-                        .space.leftbar
-                            p とあるライトノベルを題材にしたModです。
+                .container
+                    .row
+                        .col-md-3
+                        #carouselExampleIndicators.carousel.slide.col-12.col-md-6(data-ride="carousel").bg-secondary.text-white.text-center
+                            ol.carousel-indicators
+                                li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+                            .carousel-inner(role="listbox")
+                                .carousel-item.active.w-100(style="margin-bottom:25px;")
+                                    a(href="https://twitter.com/ZOI_channel")
+                                        img.d-block.w-100(src="/assets/img/mods/SAOmod.png" alt="SAOmod" data-holder-rendered="true")
+                                    p とあるライトノベルを題材にしたModです。
+                            a.carousel-control-prev(data-target="#carouselExampleIndicators" role="button" data-slide="prev")
+                                span.carousel-control-prev-icon(aria-hidden="true")
+                                span.sr-only Previous
+                            a.carousel-control-next(data-target="#carouselExampleIndicators" role="button" data-slide="next")
+                                span.carousel-control-next-icon(aria-hidden="true")
+                                span.sr-only Next
+                        .col-md-3
         include parts/footer.pug
