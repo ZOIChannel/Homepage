@@ -10,36 +10,36 @@ html(lang="ja")
     body
         include parts/header.pug
         div.main
-            div.server-top Play&nbsp;&nbsp;Multiplayer
+            div.server_top Play&nbsp;&nbsp;Multiplayer
             div.servers
                 div.server
                     div.server_favicon#server_favicon_1
-                        img.favicon(src="/assets/img/server/defult.png")
+                        img.server_favicon_img(src="/assets/img/server/defult.png")
                     .server_lines
                         .server_line.server_line_1 mc.hypixel.net
                             .server_members#server_line_1-1
                                 img.radio(src="/assets/img/server/anim/anim.gif" align="right")
-                        .server_line.server_line_2#server_line_1-2 aaaaa
-                        .server_line.server_line_3#server_line_1-3 bbbbb
+                        .server_line.server_line_2#server_line_1-2.server_loading Roading...
+                        .server_line.server_line_3#server_line_1-3 Roading...
                 div.server
                     div.server_favicon#server_favicon_2
-                        img.favicon(src="/assets/img/server/defult.png")
+                        img.server_favicon_img(src="/assets/img/server/defult.png")
                     .server_lines
                         .server_line.server_line_1 play.minecraft.jp
                             .server_members#server_line_2-1
                                 img.radio(src="/assets/img/server/anim/anim.gif" align="right")
-                        .server_line.server_line_2#server_line_2-2 aaaaa
-                        .server_line.server_line_3#server_line_2-3 bbbbb
+                        .server_line.server_line_2#server_line_2-2 Roading...
+                        .server_line.server_line_3#server_line_2-3 Roading...
                 div.server
                     div.server_favicon#server_favicon_3
-                        img.favicon(src="/assets/img/server/defult.png")
+                        img.server_favicon_img(src="/assets/img/server/defult.png")
                     .server_lines
                         .server_line.server_line_1 pechi.jp
                             .server_members#server_line_3-1
                                 img.radio(src="/assets/img/server/anim/anim.gif" align="right")
-                        .server_line.server_line_2#server_line_3-2 aaaaa
-                        .server_line.server_line_3#server_line_3-3 bbbbb
-            .server-bottom
+                        .server_line.server_line_2#server_line_3-2 Roading...
+                        .server_line.server_line_3#server_line_3-3 Roading...
+            .server_bottom
                 .server_buttons
                     .server_button
                         .server_button_L(onclick="JoinServer()") Join&nbsp;&nbsp;Server

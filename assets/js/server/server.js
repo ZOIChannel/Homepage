@@ -103,15 +103,15 @@ function getPing_1(data, result1) {
     if (data.error == null) {
         line1 = data.players.online + "/" + data.players.max;
         if (data.latency < 150) {
-            line1 += '<img class="radio" src="/assets/img/server/ok_5.png" align="right">'
+            line1 += '<img class="server_radio" src="/assets/img/server/ok_5.png" align="right">'
         } else if (data.latency < 300) {
-            line1 += '<img class="radio" src="/assets/img/server/ok_4.png" align="right">'
+            line1 += '<img class="server_radio" src="/assets/img/server/ok_4.png" align="right">'
         } else if (data.latency < 450) {
-            line1 += '<img class="radio" src="/assets/img/server/ok_3.png" align="right">'
+            line1 += '<img class="server_radio" src="/assets/img/server/ok_3.png" align="right">'
         } else if (data.latency < 600) {
-            line1 += '<img class="radio" src="/assets/img/server/ok_2.png" align="right">'
+            line1 += '<img class="server_radio" src="/assets/img/server/ok_2.png" align="right">'
         } else if (data.latency < 750) {
-            line1 += '<img class="radio" src="/assets/img/server/ok_1.png" align="right">'
+            line1 += '<img class="server_radio" src="/assets/img/server/ok_1.png" align="right">'
         }
     } else {
         line1 += '<img class="radio" src="/assets/img/server/ng.png" align="right">'
@@ -122,9 +122,9 @@ function getPing_1(data, result1) {
 function getPing_2(data, result2) {
     var line2 = "";
     if (data.error == null) {
-        line2 = '<span>' + data.description + '</span>';
+        line2 = '<span class="server_line_2_span">' + data.description + '</span>';
     } else {
-        line2 = data.error;
+        line2 = `<span style='color:#AA0000;'>${data.error}</span>`;
     }
     result2.innerHTML = line2;
 }
@@ -134,15 +134,15 @@ function getPing_3(data, result3) {
     if (data.error == null) {
         line3 = "VERSION : " + data.version.name;
     } else {
-        line3 = "<span style='color:#ff0000;'>!!!ERROR!!!</span>";
+        line3 = "<span style='color:#300000;'>!!!ERROR!!!</span>";
     }
     result3.innerHTML = line3;
 }
 
 function getPing_img(data, resultImg, serverIp, serverNumber) {
-    var lineImg = `<img class="favicon" id="favicon_${serverNumber}" src="/assets/img/server/defult.png">`;
+    var lineImg = `<img class="server_favicon_img" id="server_favicon_img_${serverNumber}" src="/assets/img/server/defult.png">`;
     if (data.error == null) {
-        lineImg = `<img class="favicon" id="favicon_${serverNumber}" src="https://api.minetools.eu/favicon/${serverIp}">`;
+        lineImg = `<img class="server_favicon_img" id="server_favicon_img_${serverNumber}" src="https://api.minetools.eu/favicon/${serverIp}">`;
     }
     resultImg.innerHTML = lineImg;
 }
