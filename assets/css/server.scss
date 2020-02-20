@@ -12,7 +12,7 @@ html {
 
 body {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 56px);
 }
 
 .Multi {
@@ -38,9 +38,10 @@ body {
     align-items: center;
     &s {
         padding-top: 126px;
+        padding: 120px 0 164px 0;
         /*padding-bottom: 205px;*/
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         background-image: url("/assets/img/dirt/black_dirt.png");
     }
     &_top {
@@ -123,26 +124,20 @@ body {
         height: 24px;
         margin: 8px;
     }
-    &_loading {
-        animation: ServerLoading 5s linear infinite;
+    /*
+    &_loading::after {
+        content: ".";
+        animation: ServerLoading 2s infinite;
         @keyframes ServerLoading {
             0% {
-                .server_loading::before {
-                    content: ".";
-                }
+                content: "..";
             }
-            33% {
-                .server_loading::before {
-                    content: "..";
-                }
-            }
-            66% {
-                .server_loading::before {
-                    content: "...";
-                }
+            50% {
+                content: "...";
             }
         }
     }
+    */
     &_button {
         display: inline-flex;
         &s {
@@ -171,5 +166,22 @@ body {
             border-right: 3px solid #565656;
             border-bottom: 3px solid #565656;
         }
+    }
+}
+
+@media (max-width:880px) {
+    .server {
+        &s {
+            display: none;
+        }
+        &_top {
+            display: none;
+        }
+        &_bottom {
+            display: none;
+        }
+    }
+    .main::after {
+        content: "スマホでは見れない";
     }
 }

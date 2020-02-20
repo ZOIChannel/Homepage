@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Minecraft';
   font-display: swap;
@@ -9,7 +10,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%; }
+  height: calc(100% - 56px); }
 
 .Multi {
   width: 100%;
@@ -35,12 +36,27 @@ body {
   justify-content: start;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  /*
+    &_loading::after {
+        content: ".";
+        animation: ServerLoading 2s infinite;
+        @keyframes ServerLoading {
+            0% {
+                content: "..";
+            }
+            50% {
+                content: "...";
+            }
+        }
+    }
+    */ }
   .servers {
     padding-top: 126px;
+    padding: 120px 0 164px 0;
     /*padding-bottom: 205px;*/
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-image: url("/assets/img/dirt/black_dirt.png"); }
   .server_top {
     z-index: 1;
@@ -119,31 +135,6 @@ body {
   .server_radio {
     height: 24px;
     margin: 8px; }
-  .server_loading {
-    -webkit-animation: ServerLoading 5s linear infinite;
-    animation: ServerLoading 5s linear infinite; }
-
-@-webkit-keyframes ServerLoading {
-  0% {
-    .server_loading::before {
-      content: "."; } }
-  33% {
-    .server_loading::before {
-      content: ".."; } }
-  66% {
-    .server_loading::before {
-      content: "..."; } } }
-
-@keyframes ServerLoading {
-  0% {
-    .server_loading::before {
-      content: "."; } }
-  33% {
-    .server_loading::before {
-      content: ".."; } }
-  66% {
-    .server_loading::before {
-      content: "..."; } } }
   .server_button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -171,3 +162,13 @@ body {
       border-left: 3px solid #ababab;
       border-right: 3px solid #565656;
       border-bottom: 3px solid #565656; }
+
+@media (max-width: 880px) {
+  .servers {
+    display: none; }
+  .server_top {
+    display: none; }
+  .server_bottom {
+    display: none; }
+  .main::after {
+    content: "スマホでは見れない"; } }

@@ -10,14 +10,21 @@
 
 body {
   font-family: "LogotypeM";
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 20px; }
+  @media (max-width: 576px) {
+    body {
+      font-size: 16px; } }
 
 ul,
 ol {
   list-style: none; }
+  @media (max-width: 576px) {
+    ul,
+    ol {
+      padding: 0; } }
 
 .main {
-  font-size: 20px;
   margin-top: 56px;
   background-image: url("/assets/img/dirt/white_dirt.png"); }
 
@@ -28,17 +35,28 @@ ol {
 .center {
   text-align: center; }
 
-.date {
-  margin: 0 10px;
-  padding: 5px;
-  font-size: 15px;
-  color: whitesmoke;
-  background-color: grey;
-  border-radius: 5px; }
-
 .log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px 0;
   /*width: 500px;*/ }
+  .log_date {
+    display: inline-block;
+    width: 100px;
+    height: 1em;
+    margin: 0 10px;
+    padding: 5px;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-size: 15px;
+    line-height: 1em;
+    color: whitesmoke;
+    background-color: grey;
+    border-radius: 5px; }
+  .log_text {
+    display: inline-block; }
 
 .h4 {
   font-size: 20px;
@@ -60,3 +78,8 @@ footer {
 .stress {
   -webkit-filter: drop-shadow(5px 5px 0 #00000044);
   filter: drop-shadow(5px 5px 0 #00000044); }
+
+@media (max-width: 610px) {
+  .youtube {
+    width: calc(100vmin - 50px);
+    height: calc((9 / 16) * (100vmin - 50px)); } }

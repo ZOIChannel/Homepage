@@ -14,15 +14,21 @@
 body {
     font-family: "LogotypeM";
     font-weight: 100;
+    font-size: 20px;
+    @media (max-width: 576px) {
+        font-size: 16px;
+    }
 }
 
 ul,
 ol {
     list-style: none;
+    @media (max-width: 576px) {
+        padding: 0;
+    }
 }
 
 .main {
-    font-size: 20px;
     margin-top: 56px;
     background-image: url("/assets/img/dirt/white_dirt.png");
 }
@@ -36,18 +42,27 @@ ol {
     text-align: center;
 }
 
-.date {
-    margin: 0 10px;
-    padding: 5px;
-    font-size: 15px;
-    color: whitesmoke;
-    background-color: grey;
-    border-radius: 5px;
-}
-
 .log {
+    display: flex;
     padding: 5px 0;
     /*width: 500px;*/
+    &_date {
+        display: inline-block;
+        width: 100px;
+        height: 1em;
+        margin: 0 10px;
+        padding: 5px;
+        text-align: center;
+        box-sizing: content-box;
+        font-size: 15px;
+        line-height: 1em;
+        color: whitesmoke;
+        background-color: grey;
+        border-radius: 5px;
+    }
+    &_text {
+        display: inline-block;
+    }
 }
 
 .h4 {
@@ -72,4 +87,11 @@ footer {
 
 .stress {
     filter: drop-shadow(5px 5px 0 #00000044);
+}
+
+.youtube {
+    @media(max-width: 610px) {
+        width: calc(100vmin - 50px);
+        height: calc((9 / 16) * (100vmin - 50px));
+    }
 }
