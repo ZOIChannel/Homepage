@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include ../assets/page-parts/head.pug
+        title Contact Me
+    body
+    include ../assets/page-parts/header.pug
+    .main
+        .main-text
+            h1.stress.center(style="line-height:150px;") ZOIにメッセージを送る
+            form
+                .form-group
+                    label(for="formGroupExampleInput") 名前(偽名可)
+                    input.form-control#formGroupExampleInput(type="text")
+                .form-group
+                    label(for="exampleInputEmail1") 返信用メールアドレス
+                    input.form-control#exampleInputEmail1(type="email" aria-describedby="emailHelp" placeholder="name@example.com")
+                .form-group
+                    label(for="exampleFormControlTextarea1") Example textarea
+                    textarea.form-control#exampleFormControlTextarea1(rows="3")
+                .form-group.form-check
+                    input.form-check-input#exampleCheck1(type="checkbox")
+                    label.form-check-label(for="exampleCheck1") Check me out
+                button.btn.btn-primary(type="submit") Submit
+    include ../assets/page-parts/footer.pug
