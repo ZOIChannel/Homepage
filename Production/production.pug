@@ -1,0 +1,57 @@
+doctype html
+html(lang="ja")
+    head
+        include ../assets/page-parts/head.pug
+        script(src="/assets/js/changelog/changelog.js")
+        title ZOI-作品
+    body
+        include ../assets/page-parts/header.pug
+        .main
+            .main-text
+                h1.stress.center(style="line-height:150px;") ZOIの作品
+                h2.stress Webアプリ
+                .container
+                    .row
+                        .col-md-6.col-lg-4
+                            .card
+                                img.card-img-top(src="/assets/img/Production/Server.png" alt="ServerViewer")
+                                .card-body
+                                    h4.card-title Minecraft Server Viewer
+                                    p.card-text
+                                        | Minecraftのマルチプレイ画面を、Web上に描き出しました。
+                                        br
+                                        | 表示するサーバーの要望があればご連絡ください。
+                                    a.btn.btn-primary(href="/Server/server.html") 見てみる
+                                .card-footer
+                                    | 使用言語 : HTML CSS JS
+                                    br
+                                    | ※スマートフォンからの閲覧はできません。
+                h2.stress WebAPI
+                .container
+                    .row
+                        .col-md-6.col-lg-4
+                            .card
+                                img.card-img-top(src="" alt="MailApi")
+                                .card-body
+                                    h4.card-title ZOI's Mail API
+                                    p.card-text
+                                        | JSなどのGET/POST通信を使い簡単にメールを送れます。
+                                        br
+                                        | ただいま整備中です。
+                                    a.btn.btn-primary(href="") 見てみる
+                                .card-footer
+                                    | 使用言語 : PHP
+                h2.stress Mod(Minecraft)
+                .container
+                    .row
+                        .col-md-6.col-lg-4
+                            .card
+                                img.card-img-top(src="/assets/img/mods/SAOmod.png" alt="SAOmod")
+                                .card-body
+                                    h4.card-title SAOmod
+                                    p.card-text
+                                        | とあるライトノベルを題材としたmodです。
+                                    a.btn.btn-primary(href="") 見てみる
+                                .card-footer
+                                    | 対応Ver : 1.7.10
+        include ../assets/page-parts/footer.pug

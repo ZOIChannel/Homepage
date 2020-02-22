@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>http://zoizoi.net/</loc>
+  <priority>1.0</priority>
+  <lastmod>2020-02-22T21:50:21+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:21+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/Server/server.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:15+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/Youtube/youtube.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:15+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/Mods/mods.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:14+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/Computer/computer.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:13+09:00</lastmod>
+</url>
+<url>
+  <loc>http://zoizoi.net/ContactMe/contact_me.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-02-22T21:50:13+09:00</lastmod>
+</url>
+
+</urlset>

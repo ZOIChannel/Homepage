@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: 'Minecraft';
     font-display: swap;
@@ -36,6 +37,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
+
     &s {
         padding-top: 126px;
         padding: 120px 0 164px 0;
@@ -44,6 +46,7 @@ body {
         min-height: 100%;
         background-image: url("/assets/img/dirt/black_dirt.png");
     }
+
     &_top {
         z-index: 1;
         font-family: "Minecraft";
@@ -58,6 +61,7 @@ body {
         text-align: center;
         box-sizing: content-box;
     }
+
     &_bottom {
         font-family: "Minecraft";
         font-size: 22.5px;
@@ -67,52 +71,64 @@ body {
         height: 164px;
         background-image: url("/assets/img/dirt/brown_dirt.png");
     }
+
     &_favicon {
         width: 120px;
         height: 120px;
         margin: 5px;
+
         &s {
             width: 130px;
             height: 130px;
         }
+
         &_img {
             width: 120px;
             height: 120px;
         }
     }
+
     &_line {
         height: 40px;
         white-space: nowrap;
         overflow-y: hidden;
         overflow-x: hidden;
+
         &s {
             width: calc(100% - 140px);
             margin: 5px;
         }
+
         &_1 {
             color: #ffffff;
         }
+
         &_2 {
             color: #aaaaaa;
+
             &_span {
                 display: inline-block;
                 padding-left: 100%;
                 white-space: nowrap;
                 animation: ScrollServerLine 15s linear infinite;
+
                 @keyframes ScrollServerLine {
                     0% {
                         transform: translateX(0)
                     }
+
                     100% {
                         transform: translateX(-100%)
                     }
                 }
             }
         }
+
         &_3 {
             color: #303030;
         }
     }
+
     &_members {
         height: 40px;
         /*!!!!!!!*/
@@ -120,10 +136,12 @@ body {
         display: inline-table;
         text-align: right;
     }
+
     &_radio {
         height: 24px;
         margin: 8px;
     }
+
     /*
     &_loading::after {
         content: ".";
@@ -140,12 +158,14 @@ body {
     */
     &_button {
         display: inline-flex;
+
         &s {
             color: #ffffff;
             line-height: calc(50px - 3px * 2);
             margin-top: 6px;
             text-align: center;
         }
+
         &_S {
             background-color: #6f6f6f;
             margin: 10px 15px;
@@ -156,6 +176,7 @@ body {
             border-right: 3px solid #565656;
             border-bottom: 3px solid #565656;
         }
+
         &_L {
             background-color: #6f6f6f;
             margin: 10px 10px;
@@ -174,13 +195,16 @@ body {
         &s {
             display: none;
         }
+
         &_top {
             display: none;
         }
+
         &_bottom {
             display: none;
         }
     }
+
     .main::after {
         content: "スマホでは見れない";
     }

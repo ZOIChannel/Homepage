@@ -2,28 +2,23 @@
 @font-face {
   font-family: 'Minecraft';
   font-display: swap;
-  src: url("/assets/fonts/minecraft/minecraft_font.otf") format("opentype"), url("/assets/fonts/minecraft/minecraft_font.ttf") format("truetype");
-}
+  src: url("/assets/fonts/minecraft/minecraft_font.otf") format("opentype"), url("/assets/fonts/minecraft/minecraft_font.ttf") format("truetype"); }
 
 html {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 body {
   width: 100%;
-  height: calc(100% - 56px);
-}
+  height: calc(100% - 56px); }
 
 .Multi {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .main {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .server {
   font-family: "Minecraft";
@@ -37,11 +32,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   /*
     &_loading::after {
         content: ".";
@@ -55,174 +50,125 @@ body {
             }
         }
     }
-    */
-}
-
-.servers {
-  padding-top: 126px;
-  padding: 120px 0 164px 0;
-  /*padding-bottom: 205px;*/
-  width: 100%;
-  min-height: 100%;
-  background-image: url("/assets/img/dirt/black_dirt.png");
-}
-
-.server_top {
-  z-index: 1;
-  font-family: "Minecraft";
-  font-size: 25px;
-  color: white;
-  position: fixed;
-  top: 56px;
-  width: 100%;
-  height: 40px;
-  padding-top: 80px;
-  background-image: url("/assets/img/dirt/brown_dirt.png");
-  text-align: center;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.server_bottom {
-  font-family: "Minecraft";
-  font-size: 22.5px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 164px;
-  background-image: url("/assets/img/dirt/brown_dirt.png");
-}
-
-.server_favicon {
-  width: 120px;
-  height: 120px;
-  margin: 5px;
-}
-
-.server_favicons {
-  width: 130px;
-  height: 130px;
-}
-
-.server_favicon_img {
-  width: 120px;
-  height: 120px;
-}
-
-.server_line {
-  height: 40px;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.server_lines {
-  width: calc(100% - 140px);
-  margin: 5px;
-}
-
-.server_line_1 {
-  color: #ffffff;
-}
-
-.server_line_2 {
-  color: #aaaaaa;
-}
-
-.server_line_2_span {
-  display: inline-block;
-  padding-left: 100%;
-  white-space: nowrap;
-  -webkit-animation: ScrollServerLine 15s linear infinite;
-          animation: ScrollServerLine 15s linear infinite;
-}
+    */ }
+  .servers {
+    padding-top: 126px;
+    padding: 120px 0 164px 0;
+    /*padding-bottom: 205px;*/
+    width: 100%;
+    min-height: 100%;
+    background-image: url("/assets/img/dirt/black_dirt.png"); }
+  .server_top {
+    z-index: 1;
+    font-family: "Minecraft";
+    font-size: 25px;
+    color: white;
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    height: 40px;
+    padding-top: 80px;
+    background-image: url("/assets/img/dirt/brown_dirt.png");
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+  .server_bottom {
+    font-family: "Minecraft";
+    font-size: 22.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 164px;
+    background-image: url("/assets/img/dirt/brown_dirt.png"); }
+  .server_favicon {
+    width: 120px;
+    height: 120px;
+    margin: 5px; }
+    .server_favicons {
+      width: 130px;
+      height: 130px; }
+    .server_favicon_img {
+      width: 120px;
+      height: 120px; }
+  .server_line {
+    height: 40px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden; }
+    .server_lines {
+      width: calc(100% - 140px);
+      margin: 5px; }
+    .server_line_1 {
+      color: #ffffff; }
+    .server_line_2 {
+      color: #aaaaaa; }
+      .server_line_2_span {
+        display: inline-block;
+        padding-left: 100%;
+        white-space: nowrap;
+        -webkit-animation: ScrollServerLine 15s linear infinite;
+        animation: ScrollServerLine 15s linear infinite; }
 
 @-webkit-keyframes ScrollServerLine {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+    transform: translateX(0); }
   100% {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
+    transform: translateX(-100%); } }
 
 @keyframes ScrollServerLine {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+    transform: translateX(0); }
   100% {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-.server_line_3 {
-  color: #303030;
-}
-
-.server_members {
-  height: 40px;
-  /*!!!!!!!*/
-  float: right;
-  display: inline-table;
-  text-align: right;
-}
-
-.server_radio {
-  height: 24px;
-  margin: 8px;
-}
-
-.server_button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.server_buttons {
-  color: #ffffff;
-  line-height: calc(50px - 3px * 2);
-  margin-top: 6px;
-  text-align: center;
-}
-
-.server_button_S {
-  background-color: #6f6f6f;
-  margin: 10px 15px;
-  width: 190px;
-  height: 50px;
-  border-top: 3px solid #ababab;
-  border-left: 3px solid #ababab;
-  border-right: 3px solid #565656;
-  border-bottom: 3px solid #565656;
-}
-
-.server_button_L {
-  background-color: #6f6f6f;
-  margin: 10px 10px;
-  width: 270px;
-  height: 50px;
-  border-top: 3px solid #ababab;
-  border-left: 3px solid #ababab;
-  border-right: 3px solid #565656;
-  border-bottom: 3px solid #565656;
-}
+    transform: translateX(-100%); } }
+    .server_line_3 {
+      color: #303030; }
+  .server_members {
+    height: 40px;
+    /*!!!!!!!*/
+    float: right;
+    display: inline-table;
+    text-align: right; }
+  .server_radio {
+    height: 24px;
+    margin: 8px; }
+  .server_button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .server_buttons {
+      color: #ffffff;
+      line-height: calc(50px - 3px * 2);
+      margin-top: 6px;
+      text-align: center; }
+    .server_button_S {
+      background-color: #6f6f6f;
+      margin: 10px 15px;
+      width: 190px;
+      height: 50px;
+      border-top: 3px solid #ababab;
+      border-left: 3px solid #ababab;
+      border-right: 3px solid #565656;
+      border-bottom: 3px solid #565656; }
+    .server_button_L {
+      background-color: #6f6f6f;
+      margin: 10px 10px;
+      width: 270px;
+      height: 50px;
+      border-top: 3px solid #ababab;
+      border-left: 3px solid #ababab;
+      border-right: 3px solid #565656;
+      border-bottom: 3px solid #565656; }
 
 @media (max-width: 880px) {
   .servers {
-    display: none;
-  }
+    display: none; }
   .server_top {
-    display: none;
-  }
+    display: none; }
   .server_bottom {
-    display: none;
-  }
+    display: none; }
   .main::after {
-    content: "スマホでは見れない";
-  }
-}
-/*# sourceMappingURL=server.css.map */
+    content: "スマホでは見れない"; } }

@@ -1,20 +1,22 @@
 @charset "UTF-8";
+
 @font-face {
-    font-family: 'LogotypeM';
+    font-family: "LogotypeM";
     font-display: swap;
-    src: url('/assets/fonts/logotype/logotypejp_mp_m_1.1.ttf') format('truetype');
+    src: url("/assets/fonts/logotype/logotypejp_mp_m_1.1.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'LogotypeB';
+    font-family: "LogotypeB";
     font-display: swap;
-    src: url('/assets/fonts/logotype/logotypejp_mp_b_1.1.ttf') format('truetype');
+    src: url("/assets/fonts/logotype/logotypejp_mp_b_1.1.ttf") format("truetype");
 }
 
 body {
     font-family: "LogotypeM";
     font-weight: 100;
     font-size: 20px;
+
     @media (max-width: 576px) {
         font-size: 16px;
     }
@@ -23,6 +25,7 @@ body {
 ul,
 ol {
     list-style: none;
+
     @media (max-width: 576px) {
         padding: 0;
     }
@@ -46,6 +49,7 @@ ol {
     display: flex;
     padding: 5px 0;
     /*width: 500px;*/
+
     &_date {
         display: inline-block;
         width: 100px;
@@ -61,6 +65,7 @@ ol {
         border-radius: 5px;
         flex-shrink: 0;
     }
+
     &_text {
         display: inline-block;
     }
@@ -91,12 +96,17 @@ footer {
 }
 
 .youtube {
-    @media(max-width: 610px) {
+    @media (max-width: 610px) {
         width: calc(100vmin - 50px);
         height: calc((9 / 16) * (100vmin - 50px));
     }
 }
 
+
 .flex {
     display: flex;
+}
+
+.card-footer {
+    font-size: small;
 }

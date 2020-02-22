@@ -1,3 +1,18 @@
+function Youtube(ID) {
+    $.ajax({
+        url: `https://youtu.be/${ID}`,
+        dataType: 'html',
+        success: function (data) {
+            $('#text').html(data);
+        },
+        error: function (data) {
+            alert('error');
+        }
+    });
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
 /*
 var serverIp = "mc.hypixel.net";
 var serverNumber = "1";

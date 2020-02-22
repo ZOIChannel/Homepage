@@ -2,6 +2,7 @@ doctype html
 html(lang="ja")
     head
         include assets/page-parts/head.pug
+        script(src="/assets/js/changelog/changelog.js")
         title ZOI-トップページ
     body
         include assets/page-parts/header.pug
@@ -9,7 +10,11 @@ html(lang="ja")
             .main-text
                 h1.stress.center(style="line-height:150px;") ZOIのホームページ
                 h2.stress 更新とお知らせ
-                ul
+                ul#changelog
+                //
+                    li.log
+                        .log_date 2020/02/22
+                        .log_text "ContactMe"作成
                     li.log
                         .log_date 2020/02/13
                         .log_text 毎日0:00にアップデート

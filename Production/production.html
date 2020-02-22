@@ -18,7 +18,8 @@
     <script src="/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script><!--CSS-->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <title>ZOI-Mods</title>
+    <script src="/assets/js/changelog/changelog.js"></script>
+    <title>ZOI-作品</title>
   </head>
   <body>
     <header>
@@ -40,22 +41,47 @@
     </header>
     <div class="main">
       <div class="main-text">
-        <h1>Mods</h1>
-        <hr>
+        <h1 class="stress center" style="line-height:150px;">ZOIの作品</h1>
+        <h2 class="stress">Webアプリ</h2>
         <div class="container">
           <div class="row">
-            <div class="col-md-3"></div>
-            <div class="carousel slide col-12 col-md-6 bg-secondary text-white text-center" id="carouselExampleIndicators" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active w-100" style="margin-bottom:25px;"><a href="https://twitter.com/ZOI_channel"><img class="d-block w-100" src="/assets/img/mods/SAOmod.png" alt="SAOmod" data-holder-rendered="true"></a>
-                  <p>とあるライトノベルを題材にしたModです。</p>
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><img class="card-img-top" src="/assets/img/Production/Server.png" alt="ServerViewer">
+                <div class="card-body">
+                  <h4 class="card-title">Minecraft Server Viewer</h4>
+                  <p class="card-text">Minecraftのマルチプレイ画面を、Web上に描き出しました。<br>表示するサーバーの要望があればご連絡ください。</p><a class="btn btn-primary" href="/Server/server.html">見てみる</a>
                 </div>
-              </div><a class="carousel-control-prev" data-target="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" data-target="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                <div class="card-footer">使用言語 : HTML CSS JS<br>※スマートフォンからの閲覧はできません。</div>
+              </div>
             </div>
-            <div class="col-md-3"></div>
+          </div>
+        </div>
+        <h2 class="stress">WebAPI</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><img class="card-img-top" src="" alt="MailApi">
+                <div class="card-body">
+                  <h4 class="card-title">ZOI's Mail API</h4>
+                  <p class="card-text">JSなどのGET/POST通信を使い簡単にメールを送れます。<br>ただいま整備中です。</p><a class="btn btn-primary" href="">見てみる</a>
+                </div>
+                <div class="card-footer">使用言語 : PHP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="stress">Mod(Minecraft)</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><img class="card-img-top" src="/assets/img/mods/SAOmod.png" alt="SAOmod">
+                <div class="card-body">
+                  <h4 class="card-title">SAOmod</h4>
+                  <p class="card-text">とあるライトノベルを題材としたmodです。</p><a class="btn btn-primary" href="">見てみる</a>
+                </div>
+                <div class="card-footer">対応Ver : 1.7.10</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

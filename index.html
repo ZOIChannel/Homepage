@@ -18,6 +18,7 @@
     <script src="/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script><!--CSS-->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <script src="/assets/js/changelog/changelog.js"></script>
     <title>ZOI-トップページ</title>
   </head>
   <body>
@@ -27,7 +28,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Server/server.html">Server</a></li>
+            <!--li.nav-itema.nav-link(href="/Server/server.html") Server
+            -->
+            <li class="nav-item"><a class="nav-link" href="/Production/production.html">Production</a></li>
             <li class="nav-item"><a class="nav-link" href="/Youtube/youtube.html">Youtube</a></li>
             <li class="nav-item"><a class="nav-link" href="/Mods/mods.html">Mods</a></li>
             <li class="nav-item"><a class="nav-link" href="/Computer/computer.html">Computer</a></li>
@@ -40,28 +43,28 @@
       <div class="main-text">
         <h1 class="stress center" style="line-height:150px;">ZOIのホームページ</h1>
         <h2 class="stress">更新とお知らせ</h2>
-        <ul>
-          <li class="log">
-            <div class="log_date">2020/02/13</div>
-            <div class="log_text">毎日0:00にアップデート</div>
-          </li>
-          <li class="log">
-            <div class="log_date">2020/02/03</div>
-            <div class="log_text">URL変更(zoizoi.netへ)</div>
-          </li>
-          <li class="log">
-            <div class="log_date">2020/01/22</div>
-            <div class="log_text">Bootstrap導入</div>
-          </li>
-          <li class="log">
-            <div class="log_date">2019/12/19</div>
-            <div class="log_text">"Logecticsで世界統一"のModデータ更新</div>
-          </li>
-          <li class="log">
-            <div class="log_date">2019/11/11</div>
-            <div class="log_text">パソコン組んだ</div>
-          </li>
-        </ul>
+        <ul id="changelog"></ul>
+        <!--
+        li.log
+            .log_date 2020/02/22
+            .log_text "ContactMe"作成
+        li.log
+            .log_date 2020/02/13
+            .log_text 毎日0:00にアップデート
+        li.log
+            .log_date 2020/02/03
+            .log_text URL変更(zoizoi.netへ)
+        li.log
+            .log_date 2020/01/22
+            .log_text Bootstrap導入
+        li.log
+            .log_date 2019/12/19
+            .log_text "Logecticsで世界統一"のModデータ更新
+        li.log
+            .log_date 2019/11/11
+            .log_text パソコン組んだ
+        
+        -->
         <h2 class="stress">自己紹介</h2>
         <hr>
         <p>自作パソコン・プログラミング・ゲーム(主にMinecraft)をしている一般人。<br> ↓↓↓ とりあえずこのDiscord鯖にCome! ↓↓↓</p>
