@@ -5,8 +5,8 @@ function ContactMeSubmit() {
     var ZOIsTextValue = document.getElementById("ZOIsTextValue").value;
 
     var to = "zoi@zoizoi.net";
-    var subject = `コメント(zoizoi.net, "${document.getElementById("ZOIsNameInput").value}"より)`;
-    var message = `${document.getElementById("ZOIsTextValue").value}\n\n返信先:${document.getElementById("ZOIsEmailInput").value}`;
+    var subject = `zoizoi.netへのコメント(${ZOIsNameInput}より)`;
+    var message = `${ZOIsTextValue}\n\n返信先:${ZOIsEmailInput}`;
     var headers = "From: user@zoizoi.net";
     /*
     console.log(to);
@@ -14,7 +14,10 @@ function ContactMeSubmit() {
     console.log(message);
     console.log(headers);
     */
-    if (to && subject && message && headers) {
+    console.log(ZOIsNameInput);
+    console.log(ZOIsEmailInput);
+    console.log(ZOIsTextValue);
+    if (ZOIsNameInput != "" && ZOIsEmailInput != "" && ZOIsTextValue != "") {
         console.log("ok.");
         $.post(
                 'http://zoichannel.php.xdomain.jp/mail.php',
@@ -25,10 +28,7 @@ function ContactMeSubmit() {
                 alert("送信が完了しました。");
             })
     } else {
-        console.log("out.");
-        document.getElementById("ZOIsNameInput").value = ZOIsNameInput;
-        document.getElementById("ZOIsEmailInput").value = ZOIsEmailInput;
-        document.getElementById("ZOIsTextValue").value = ZOIsTextValue;
+        event.preventDefault();
         alert("入力していない欄があります。");
     }
 }
