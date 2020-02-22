@@ -70,6 +70,8 @@ ol {
   color: whitesmoke;
   background-color: grey;
   border-radius: 5px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .log_text {
