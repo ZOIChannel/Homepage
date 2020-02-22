@@ -83,3 +83,8 @@ footer {
   .youtube {
     width: calc(100vmin - 50px);
     height: calc((9 / 16) * (100vmin - 50px)); } }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

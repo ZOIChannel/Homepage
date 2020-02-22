@@ -33,33 +33,35 @@
           <li class="nav-item"><a class="nav-link" href="/Youtube/youtube.html">Youtube</a></li>
           <li class="nav-item"><a class="nav-link" href="/Mods/mods.html">Mods</a></li>
           <li class="nav-item"><a class="nav-link" href="/Computer/computer.html">Computer</a></li>
-          <li class="nav-item"><a class="nav-link" href="/ContactMe/contact_me.html">Contact Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="/ContactMe/contact_me.html">ContactMe</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <div class="main">
     <div class="main-text">
-      <h1 class="stress center" style="line-height:150px;">ZOIにメッセージを送る</h1>
-      <form>
-        <div class="form-group">
-          <label for="formGroupExampleInput">名前(偽名可)</label>
-          <input class="form-control" id="formGroupExampleInput" type="text"/>
+      <h1 class="stress center" style="line-height:150px;">メッセージを送る</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <form class="col-sm-6">
+            <div class="form-group">
+              <label for="formGroupExampleInput">名前(返信用)</label>
+              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="○○ ○○"/>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">メールアドレス(返信用)</label>
+              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="name@example.com"/>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="こんにちは..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" onclick="ContactMeSubmit()">送信</button>
+          </form>
+          <div class="col-sm-3"></div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">返信用メールアドレス</label>
-          <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="name@example.com"/>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="form-group form-check">
-          <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-      </form>
+      </div>
     </div>
   </div>
   <footer>
