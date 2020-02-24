@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Additionalpipes",
+        "version": "4.7.7"
+    },
+    {
+        "name": "AdvancedSolarPanel",
+        "version": "3.5.1"
+    },
+    {
+        "name": "Bamboo",
+        "version": "2.6.8.5"
+    },
+    {
+        "name": "BedrockLayer",
+        "version": "1.0.9"
+    },
+    {
+        "name": "Buildcraft",
+        "version": "7.1.23"
+    },
+    {
+        "name": "CutAllSMP",
+        "version": "2.5.0"
+    },
+    {
+        "name": "CodeChickenCore",
+        "version": "1.0.7.47-universal"
+    },
+    {
+        "name": "CoFHCore",
+        "version": "3.1.4-329"
+    },
+    {
+        "name": "CompactEngine",
+        "version": "7.1.14-2"
+    },
+    {
+        "name": "CompactSolars",
+        "version": "4.4.41.316-universal"
+    },
+    {
+        "name": "CraftGuide",
+        "version": "1.7.1.0-forge"
+    },
+    {
+        "name": "DigAllSMP",
+        "version": "2.3.0"
+    },
+    {
+        "name": "EnderIO",
+        "version": "2.2.8.381"
+    },
+    {
+        "name": "ExtraTanks",
+        "version": "for 7.1.14"
+    },
+    {
+        "name": "Industrialcraft2",
+        "version": "2.2.828-experimental"
+    },
+    {
+        "name": "InfinityChest",
+        "version": "1.2.8"
+    },
+    {
+        "name": "Journeymap",
+        "version": "5.1.4p2-unlimited"
+    },
+    {
+        "name": "LittleMaidMobX",
+        "version": "0.1.3a"
+    },
+    {
+        "name": "Logisticspipes",
+        "version": "0.9.3.132"
+    },
+    {
+        "name": "MineAllSMP",
+        "version": "2.6.1"
+    },
+    {
+        "name": "MineFactoryReloaded",
+        "version": "2.8.2B1-201"
+    },
+    {
+        "name": "MultipleCamera",
+        "version": "1.0.0"
+    },
+    {
+        "name": "OldMassFabricator",
+        "version": "1.1.3"
+    },
+    {
+        "name": "OptiFine",
+        "version": "HD_U_E7"
+    },
+    {
+        "name": "PEAA",
+        "version": "1.5.3"
+    },
+    {
+        "name": "ProjectE",
+        "version": "PE1.10.1"
+    },
+    {
+        "name": "Projectred",
+        "version": "4.7.0pre12.95-Base"
+    },
+    {
+        "name": "Projectred",
+        "version": "4.7.0pre12.95-Fabrication"
+    },
+    {
+        "name": "Projectred",
+        "version": "4.7.0pre12.95-Integration"
+    },
+    {
+        "name": "Projectred",
+        "version": "4.7.0pre12.95-Lighting"
+    },
+    {
+        "name": "Projectred",
+        "version": "4.7.0pre12.95-Mechanical"
+    },
+    {
+        "name": "Railcraft",
+        "version": "9.12.2.1"
+    },
+    {
+        "name": "SlashBlade",
+        "version": "r87"
+    },
+    {
+        "name": "SpawnChecker",
+        "version": "2.1.4.128"
+    },
+    {
+        "name": "StorageBox",
+        "version": "3.0.5"
+    },
+    {
+        "name": "VisibleRayGenerator",
+        "version": "4.9.2-3"
+    },
+    {
+        "name": "Waila",
+        "version": "1.5.10"
+    },
+    {
+        "name": "WailaHarvestability",
+        "version": "4.9.2-3"
+    },
+    {
+        "name": "Wawla",
+        "version": "1.0.5.120"
+    },
+    {
+        "name": "WR-CBE",
+        "version": "1.4.1.11-universal"
+    }
+]
