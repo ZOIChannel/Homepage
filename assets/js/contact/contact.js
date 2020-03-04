@@ -3,32 +3,31 @@ function ContactMeSubmit() {
     var ZOIsNameInput = document.getElementById("ZOIsNameInput").value;
     var ZOIsEmailInput = document.getElementById("ZOIsEmailInput").value;
     var ZOIsTextValue = document.getElementById("ZOIsTextValue").value;
+    var Notification = document.getElementById("Notification")
 
     var to = "zoi@zoizoi.net";
     var subject = `zoizoi.netへのコメント(${ZOIsNameInput}より)`;
     var message = `${ZOIsTextValue}\n\n返信先:${ZOIsEmailInput}`;
     var headers = "From: user@zoizoi.net";
-    /*
-    console.log(to);
-    console.log(subject);
-    console.log(message);
-    console.log(headers);
-    */
-    console.log(ZOIsNameInput);
-    console.log(ZOIsEmailInput);
-    console.log(ZOIsTextValue);
     if (ZOIsNameInput != "" && ZOIsEmailInput != "" && ZOIsTextValue != "") {
-        console.log("ok.");
         $.post(
-                'http://zoichannel.php.xdomain.jp/mail.php',
-                `to=${to}&subject=${subject}&message=${message}&headers=${headers}`
-            )
-            .done(function(data) {
-                // console.log(data.form);
-                alert("送信が完了しました。");
+            'http://zoichannel.php.xdomain.jp/mail.php',
+            `to=${to}&subject=${subject}&message=${message}&headers=${headers}`
+        )
+            .done(function (data) {
+                Notification.innerHTML = `
+                <div class="alert alert-success" role="alert">
+                    <strong>いいね!</strong> 送信が完了しました。
+                </div>
+                `
             })
     } else {
         event.preventDefault();
-        alert("入力していない欄があります。");
+
+        Notification.innerHTML = `
+        <div class="alert alert-danger" role="alert">
+            <strong>おや!</strong> 入力していない欄があるようです。
+        </div>
+        `
     }
 }

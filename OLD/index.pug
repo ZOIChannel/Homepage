@@ -1,0 +1,71 @@
+doctype html
+html(lang="ja")
+    head
+        include assets/page-parts/head.pug
+        script(src="/assets/js/changelog/changelog.js")
+        title ZOI-トップページ
+    body
+        include assets/page-parts/header.pug
+        .main
+            .main-text
+                h1.stress.center(style="line-height:150px;") ZOIのホームページ
+                h2.stress 更新とお知らせ
+                ul#changelog
+                //
+                    li.log
+                        .log_date 2020/02/22
+                        .log_text "ContactMe"作成
+                    li.log
+                        .log_date 2020/02/13
+                        .log_text 毎日0:00にアップデート
+                    li.log
+                        .log_date 2020/02/03
+                        .log_text URL変更(zoizoi.netへ)
+                    li.log
+                        .log_date 2020/01/22
+                        .log_text Bootstrap導入
+                    li.log
+                        .log_date 2019/12/19
+                        .log_text "Logecticsで世界統一"のModデータ更新
+                    li.log
+                        .log_date 2019/11/11
+                        .log_text パソコン組んだ
+
+                h2.stress 自己紹介
+                hr
+                p 自作パソコン・プログラミング・ゲーム(主にMinecraft)をしている一般人。<br> ↓↓↓ とりあえずこのDiscord鯖にCome! ↓↓↓
+                button.btn.btn-primary(type="button" style="margin-bottom:25px;") Discord鯖に参加する
+
+                h2.stress ZOIの活動一覧
+                hr
+                p 是非全てのページを訪れてみてください!
+                .container
+                    .row
+                        .col-md-3
+                        #carouselExampleIndicators.carousel.slide.col-12.col-md-6(data-ride="carousel")
+                            ol.carousel-indicators
+                                li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+                                li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                                li(data-target="#carouselExampleIndicators" data-slide-to="2")
+                                li(data-target="#carouselExampleIndicators" data-slide-to="3")
+                            .carousel-inner(role="listbox")
+                                .carousel-item.active.w-100
+                                    a(href="https://www.youtube.com/channel/UCRhi7phabjtcKmLOXPDO5KA")
+                                        img.d-block.w-100(src="/assets/img/logo/YouTube/YouTube.png" alt="YouTube" data-holder-rendered="true")
+                                .carousel-item.w-100
+                                    a(href="https://twitter.com/ZOI_channel")
+                                        img.d-block.w-100(src="/assets/img/logo/Twitter/Twitter.png" alt="Twitter" data-holder-rendered="true")
+                                .carousel-item.w-100
+                                    a(href="https://discordapp.com/invite/tCg2q2j")
+                                        img.d-block.w-100(src="/assets/img/logo/Discord/Discord.png" alt="Discord" data-holder-rendered="true")
+                                .carousel-item.w-100
+                                    a(href="https://github.com/ZOIChannel")
+                                        img.d-block.w-100(src="/assets/img/logo/GitHub/GitHub.png" alt="GitHub" data-holder-rendered="true")
+                            a.carousel-control-prev(data-target="#carouselExampleIndicators" role="button" data-slide="prev")
+                                span.carousel-control-prev-icon(aria-hidden="true")
+                                span.sr-only Previous
+                            a.carousel-control-next(data-target="#carouselExampleIndicators" role="button" data-slide="next")
+                                span.carousel-control-next-icon(aria-hidden="true")
+                                span.sr-only Next
+                        .col-md-3
+        include assets/page-parts/footer.pug

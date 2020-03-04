@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+  font-weight: bold;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt"; }
+
+.background {
+  background-color: #e6e6e6; }
+
+.blog-main {
+  padding: 50px 5%;
+  margin: 0 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  border-radius: 5px; }
+
+.blog-img {
+  width: 100%; }
+
+.blog-text {
+  padding: 25px; }
+
+.blog-footer {
+  padding: 25px 10% 0 10%;
+  text-align: center; }
+
+.title {
+  margin-top: .25em; }
+
+.date {
+  padding-left: 5px;
+  color: gray;
+  font-size: smaller; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }

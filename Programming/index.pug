@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include ../assets/pages/head.pug
+        meta(name="description" content="ZOIのプログラミング解説サイトです。プログラミングをしたことがない人でも理解できるよう分かりやすく書いていきます。")
+        meta(name="robots" content="index,follow")
+        title Programming | ZOI
+    body
+        include ../assets/pages/header.pug
+        script.
+            nav_active("Programming");
+        .main
+            .main-text
+                h1 言語一覧
+                hr
+                .space
+                    h2 Web用
+                    .card-group
+                        .card
+                            img.card-img-top.img-space.img-lang(src="/Programming/HTML/Image/html.svg" alt="HTML")
+                            .card-body
+                                h4.card-title HTML
+                                p.card-text
+                                    | Webページを作るための言語です。
+                                    br
+                                    | このページもHTMLを使っています。
+                                a.btn.btn-primary(href="/Programming/HTML/" role="button") 見てみる
+                            .card-footer 必要な知識 : 特になし
+                        .card
+                            img.card-img-top.img-space.img-lang(src="/Programming/CSS/Image/css.svg" alt="CSS")
+                            .card-body
+                                h4.card-title CSS
+                                p.card-text
+                                    | ページの見た目を変える言語です。
+                                    br
+                                    | 要素の大きさなどを調節します。
+                                button.btn.btn-primary(type="button") 見てみる
+                            .card-footer 必要な知識 : HTML
+                        .card
+                            img.card-img-top.img-space.img-lang(src="/Programming/JavaScript/Image/javascript.svg" alt="JavaScript")
+                            .card-body
+                                h4.card-title JavaScript
+                                p.card-text
+                                    | ページを動かすための言語です。
+                                    br
+                                    | ページに動きを持たせられます。
+                                button.btn.btn-primary(type="button") 見てみる
+                            .card-footer 必要な知識 : HTML
+                    hr
+                    h2 計算/アプリ用
+                    .card-group
+                        .card
+                            img.card-img-top.img-space.img-lang(src="/Programming/Python/Image/python.svg" alt="Python")
+                            .card-body
+                                h4.card-title Python
+                                p.card-text
+                                    | 習得が簡単な言語です。
+                                    br
+                                    | 機械学習などにも使われています。
+                                button.btn.btn-primary(type="button") 見てみる
+                            .card-footer 必要な知識 : 特になし
+                        .card
+                            img.card-img-top.img-space.img-lang(src="/Programming/Java/Image/java.png" alt="Java")
+                            .card-body
+                                h4.card-title Java
+                                p.card-text
+                                    | 企業がよく利用しています。
+                                    br
+                                    | アプリケーションを作れます。
+                                button.btn.btn-primary(type="button") 見てみる
+                            .card-footer 必要な知識 : 特になし
+
+        include ../assets/pages/footer.pug

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include ../../../../assets/pages/head.pug
+        script(src="/assets/js/code/code.js")
+        link(rel="stylesheet" href="/assets/css/brog.css")
+        link(rel="stylesheet" href="/assets/css/code.css")
+        meta(name="robots" content="index,follow")
+        title テンプレート | ZOI
+    body
+        include ../../../../assets/pages/header.pug
+        .main.background
+            .main-text
+                .blog-main
+                    div
+                        .date
+                            i.fas.fa-sync
+                            | &nbsp; 2020年0月0日
+                        h1.title タイトル
+                        .clear
+                    hr
+                    img.blog-img(src="#" alt="___")
+                    .blog-text
+                        h2 サブタイトル
+                        hr
+                        p 内容です
+                        .space
+                            h3 サブサブタイトル
+                            hr
+                            p サブの内容です
+                            .code
+                                code#code1.
+                                    <li class="list-group-item">1-1._br
+                                    _tab<a class="link-space" href="/Programming/HTML/1/1/">_br
+                                    _tab_tabテストテスト_br
+                                    _tab</a>_br
+                                    </li>_br
+                                    <br>_br
+                                    <vbrs技イェルsgフィ絵雨sygフィうせygrフィ上sygフゥイェgフエwyf擬せ雨ygふぃせうrygふぃえうrgふぃせgふぃえsyrfげうgフィ絵鵜gryフィうイェgrフィ上rsyぎふえgrしfげrすいfげr>
+                                script.
+                                    code_html("code1")
+                                //include code1.pug
+                            .space
+                                h4 サブサブサブタイトル
+                                hr
+                                p どうでもいいことです
+                        h2 サブタイトル
+                        hr
+                        p 内容です
+                .blog-footer
+                    .left
+                        a(href="#").btn.btn-outline-primary 前の記事へ
+                    span
+                        a(href="/Programming/HTML/").btn.btn-outline-primary メニューへ戻る
+                    .right
+                        a(href="/Programming/HTML/1/2/").btn.btn-outline-primary 次の記事へ
+                    span.clear
+
+    include ../../../../assets/pages/footer.pug

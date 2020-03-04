@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include ../../../../assets/pages/head.pug
+        script(src="/assets/js/code/code.js")
+        link(rel="stylesheet" href="/assets/css/brog.css")
+        link(rel="stylesheet" href="/assets/css/code.css")
+        meta(name="robots" content="index,follow")
+        title HTMLとは | ZOI
+    body
+        include ../../../../assets/pages/header.pug
+        .main.background
+            .main-text
+                .blog-main
+                    div
+                        .date
+                            i.fas.fa-sync
+                            | &nbsp; 2020年3月5日
+                        h1.title HTMLとは
+                        .clear
+                    hr
+                    // img.blog-img(src="#" alt="___")
+                    .blog-text
+                        h2 HTMLって何?
+                        hr
+                        p
+                            a(href="https://ja.wikipedia.org/wiki/HyperText_Markup_Language") Wikipedia
+                            | &nbsp;を見てみると、
+                            p
+                                | 「ハイパーテキストを記述するためのマークアップ言語の1つである。」
+                                br
+                                | 「ウェブページを表現するために用いられる」
+                            p などと書いてあります。
+                        .space
+                            h3 よく分からない
+                            hr
+                            p
+                                | このままではよく分かりません。
+                                br
+                                | そこで、Wikipediaに書いてあることを、僕なりにまとめてみました。
+                                ul
+                                    li 厳密にはプログラミング言語ではない
+                                    li Webページを作るために使われる
+                                    li 2020/3/5時点で、HTML5が最新版である
+                                p
+                                    | 細かいことは置いておいて、Webページを作るためのものだということがわかればOKです。
+                            h3 難易度とか
+                            hr
+                            p
+                                | HTMLは、太字や斜体にしたいところを記号で囲んで作ります。
+                                br
+                                | なので、難易度としてはかなり簡単です。
+                                br
+                                | また、コードのサンプルを下に載せていますが、
+                                br
+                                | <>で囲むという規則を見つけられたら読みやすいと思います。
+                                p
+                                | 　難易度　 :&nbsp;
+                                i.fas.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                | &nbsp;簡単
+                                br
+                                | 読みやすさ :&nbsp;
+                                i.fas.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                | &nbsp;簡単
+                                .space
+                                    h4 コードのサンプル(見なくても良いです)
+                                    hr
+                                    .code
+                                        code#code1.
+                                            <h1>ここが太字になります</h1>_br
+                                            <a href="http://zoizoi.net">ここがリンクになります</a>
+                                        script.
+                                            code_html("code1")
+                                    | 結果
+                                    br
+                                    iframe(src="./code1.html" width="100%")
+                        h2 終わりに
+                        hr
+                        p
+                            | 最後まで読んでいただき、ありがとうございます。
+                            br
+                            | HTMLは難しそうに見えますが、実はとても簡単な言語なんです。
+                            br
+                            | これを読んで、HTMLへの先入観を捨てて、次の記事へ進んでもらえると嬉しいです。
+                .blog-footer
+                    // .left
+                        a(href="#").btn.btn-outline-primary 前の記事へ
+                    span
+                        a(href="/Programming/HTML/").btn.btn-outline-primary メニューへ戻る
+                    .right
+                        a(href="/Programming/HTML/1/2/").btn.btn-outline-primary 次の記事へ
+                    span.clear
+
+    include ../../../../assets/pages/footer.pug

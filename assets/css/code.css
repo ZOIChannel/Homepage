@@ -1,0 +1,25 @@
+.code {
+  display: block;
+  width: 100%;
+  padding: 25px;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: #1e1e1e;
+  overflow-x: scroll; }
+  .code span {
+    white-space: nowrap; }
+  .code-water {
+    color: #9cdcfe; }
+  .code-blue {
+    color: #569cd6; }
+  .code-gray {
+    color: gray; }
+  .code-orange {
+    color: #ce9178; }
+
+code {
+  color: #d4d4d4; }
+
+.result {
+  border: 1px solid #000000; }

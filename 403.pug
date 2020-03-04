@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include assets/pages/head.pug
+        meta(name="robots" content="noindex,follow")
+        title 403 | ZOI
+    body
+        include assets/pages/header.pug
+        .main
+            .main-text
+                h1.stress.center(style="line-height:150px;")
+                    span(style="font-size: 5em;") 403
+                    br
+                    span(style="font-size: 1.75em;") FORBIDDEN
+                h2.stress 何が起こったのか?
+                hr
+                p
+                    | アクセスできないページに飛んだようです。
+                    br
+                    | URLの入力ミスを確認してください。
+                    br
+                    | ページ内リンクからこのページに繋がった場合はこちらから知らせてくれるとありがたいです。
+                a.btn.btn-primary(href="/ContactUs/" style="margin-bottom:25px;") Contact Us
+
+
+        include assets/pages/footer.pug

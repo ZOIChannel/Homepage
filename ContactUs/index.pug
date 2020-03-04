@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include ../assets/pages/head.pug
+        script(src="/assets/js/contact/contact.js")
+        meta(name="description" content="ZOIへなにか伝えたい事がある時ぜひ利用してください。些細なことでもいいです。")
+        meta(name="robots" content="index,follow")
+        title Contact Us | ZOI
+    body
+        include ../assets/pages/header.pug
+        script.
+            nav_active("ContactUs");
+        .main
+            .main-text
+                #Notification.center
+                h1.stress.center(style="line-height:150px;") コメントを送る
+                p.center
+                    | ZOIに言いたいことを言うことができます!
+                    br
+                    | 雑談でも、どうでもいいことでも、自由に送ってください!
+
+
+                .container
+                    .row
+                        .col-sm-3
+                        form.col-sm-6
+                            .form-group
+                                label(for="ZOIsNameInput") 名前(返信用)
+                                input.form-control#ZOIsNameInput(type="text" placeholder="○○ ○○")
+                            .form-group
+                                label(for="ZOIsEmailInput") メールアドレス(返信用)
+                                input.form-control#ZOIsEmailInput(type="email" aria-describedby="emailHelp" placeholder="name@example.com")
+                            .form-group
+                                label(for="ZOIsTextValue")
+                                textarea.form-control#ZOIsTextValue(rows="3" placeholder="こんにちは...")
+                            button.btn.btn-primary(type="submit" onclick="ContactMeSubmit()") 送信
+                        .col-sm-3
+        include ../assets/pages/footer.pug

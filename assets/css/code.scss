@@ -1,0 +1,40 @@
+.code {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: rgb(30, 30, 30);
+    overflow-x: scroll;
+
+    & span {
+        white-space: nowrap;
+    }
+
+    &-water {
+        color: rgb(156, 220, 254);
+    }
+
+    &-blue {
+
+        color: rgb(86, 156, 214);
+    }
+
+    &-gray {
+        color: rgb(128, 128, 128);
+    }
+
+    &-orange {
+        color: rgb(206, 145, 120);
+    }
+
+}
+
+code {
+    color: rgb(212, 212, 212);
+}
+
+.result {
+    border: 1px solid #000000;
+}

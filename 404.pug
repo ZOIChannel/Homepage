@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        include assets/pages/head.pug
+        meta(name="robots" content="noindex,follow")
+        title 404 | ZOI
+    body
+        include assets/pages/header.pug
+        .main
+            .main-text
+                h1.stress.center(style="line-height:150px;") 
+                    span(style="font-size: 5em;") 404
+                    br
+                    span(style="font-size: 1.75em;") NOT FOUND
+                h2.stress 何が起こったのか?
+                hr
+                p
+                    | お探しのページは見つかりませんでした。
+                    br
+                    | URLの入力ミスを確認してください。
+                    br
+                    | ページ内リンクからこのページに繋がった場合ばこちらから知らせてくれるとありがたいです。
+                a.btn.btn-primary(href="/ContactUs/" style="margin-bottom:25px;") Contact Us
+
+
+        include assets/pages/footer.pug

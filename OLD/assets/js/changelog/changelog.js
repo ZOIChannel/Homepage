@@ -1,5 +1,5 @@
 $(function () {
-    $.getJSON("/assets/js/changelog/changelog.json", function (changelog_json) {
+    $.getJSON("/assets/json/ChangeLog/changelog.json", function (changelog_json) {
         for (var i in changelog_json) {
             /*
             console.log(i);
