@@ -1,0 +1,101 @@
+doctype html
+html(lang="ja")
+    head
+        include ../assets/page-parts/head.pug
+        script(src="/assets/js/youtube/logistics.js")
+        title ZOI-Youtube
+    body
+        include ../assets/page-parts/header.pug
+        .main
+            .main-text
+                h1 動画
+                hr
+                h2 シリーズ
+                .space
+                    h3 Logisticsで世界統一
+                    .space.leftbar
+                        p Minecraft1.7.10で、大量の工業系Modを入れて遊ぶシリーズです。
+                        details
+                            summary.h4 Mod一覧
+                            .rounded(style="background-color:rgba(255, 255, 255, 0.5);")
+                                table.table.table-sm.table-striped
+                                    thead
+                                        tr
+                                            th #
+                                            th mod名
+                                            th バージョン
+                                    tbody#logistics
+                        details
+                            summary.h4 動画一覧
+                            table
+                                ul
+                                    li.log
+                                        .log_date 2019/04/08
+                                        a.log_text(href="https://youtu.be/4D6B28hb6w8") Logisticsで世界統一 part1
+                                    li.log
+                                        .log_date 2019/05/24
+                                        a.log_text(href="https://youtu.be/eNf-6MTQQAY") Logisticsで世界統一 part2
+                                    li.log
+                                        .log_date 2019/06/04
+                                        a.log_text(href="https://youtu.be/vzxlh_R2sow") Logisticsで世界統一 part3
+                                    li.log
+                                        .log_date 2019/07/02
+                                        a.log_text(href="https://youtu.be/IVll8MgvzEs") Logisticsで世界統一 part1~3 ノーカット
+                                    li.log
+                                        .log_date 2019/08/24
+                                        a.log_text(href="https://youtu.be/V_gvr1EGONY") Logisticsで世界統一 part4
+                                    li.log
+                                        .log_date 2019/09/27
+                                        a.log_text(href="https://youtu.be/5gUy9wHrUy8") Logisticsで世界統一 Part5
+                        .youtube
+                            iframe(width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYSe2VuP7Wghlc3qxGXo0GrQy8COhgpO3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+                hr
+                h2 使用した動画編集ソフト
+                .space
+                    h3 iMovie
+                    .space.leftbar
+                        ul
+                            li.log.youtube_4D6B28hb6w8
+                                .log_date 2019/04/08
+                                a.log_text(href="https://youtu.be/4D6B28hb6w8") Logisticsで世界統一 part1
+                            li &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇︎
+                            li.log.youtube_log
+                                .log_date 2019/07/02
+                                a.log_text(href="https://youtu.be/IVll8MgvzEs") Logisticsで世界統一 part1~3 ノーカット
+                    h3 DaVinci Resolve 16
+                    .space.leftbar
+                        ul
+                            li.log.youtube_log
+                                .log_date 2019/09/14
+                                a.log_text(href="https://youtu.be/fCM_DYEzwOo") 【ヤバイ】かーぼんさんの天気の子と原作比較してみた
+                    h3 YMM4
+                    .space.leftbar
+                        ul
+                            li.log.youtube_log
+                                .log_date 2019/08/24
+                                a.log_text(href="https://youtu.be/V_gvr1EGONY") Logisticsで世界統一 part4
+                            li &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇︎
+                            li.log.youtube_log
+                                .log_date 2019/09/27
+                                a.log_text(href="https://youtu.be/5gUy9wHrUy8") Logisticsで世界統一 Part5
+                    h3 AviUtl100
+                    .space.leftbar
+                        ul
+                            li.log.youtube_log
+                                .log_date 2019/10/06
+                                a.log_text(href="https://youtu.be/MpCtu0yR6Ck") 新オープニング（仮）
+                            li &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇︎
+                            li.log.youtube_log
+                                .log_date 2019/11/23
+                                a.log_text(href="https://youtu.be/pMWTqZ72gBE") 新エンディング(仮)
+                    h3 YMM3 + AviUtl100
+                    .space.leftbar
+                        ul
+                            li.log.youtube_log
+                                .log_date 2020/01/25
+                                a.log_text(href="https://youtu.be/Iz_If0BfX_E") 【自作PC】MinecraftでFPS4桁出せるPCを組みました。Core i7+RTX2060【○○万!?】
+                            li &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇︎
+                            li.log.youtube_log
+                                .log_date NOW!
+                                a.log_text
+        include ../assets/page-parts/footer.pug
