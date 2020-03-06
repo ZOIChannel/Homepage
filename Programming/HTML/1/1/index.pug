@@ -6,7 +6,7 @@ html(lang="ja")
         link(rel="stylesheet" href="/assets/css/brog.css")
         link(rel="stylesheet" href="/assets/css/code.css")
         meta(name="robots" content="index,follow")
-        title HTMLとは | ZOI
+        title HTMLとは - HTML | ZOI
     body
         include ../../../../assets/pages/header.pug
         .main.background
@@ -50,38 +50,6 @@ html(lang="ja")
                                 | HTMLは、太字や斜体にしたいところを記号で囲んで作ります。
                                 br
                                 | なので、難易度としてはかなり簡単です。
-                                br
-                                | また、コードのサンプルを下に載せていますが、
-                                br
-                                | <>で囲むという規則を見つけられたら読みやすいと思います。
-                                p
-                                | 　難易度　 :&nbsp;
-                                i.fas.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                | &nbsp;簡単
-                                br
-                                | 読みやすさ :&nbsp;
-                                i.fas.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                | &nbsp;簡単
-                                .space
-                                    h4 コードのサンプル(見なくても良いです)
-                                    hr
-                                    .code
-                                        code#code1.
-                                            <h1>ここが太字になります</h1>_br
-                                            <a href="http://zoizoi.net">ここがリンクになります</a>
-                                        script.
-                                            code_html("code1")
-                                    | 結果
-                                    br
-                                    iframe(src="./code1.html" width="100%")
                         h2 終わりに
                         hr
                         p
@@ -91,8 +59,6 @@ html(lang="ja")
                             br
                             | これを読んで、HTMLへの先入観を捨てて、次の記事へ進んでもらえると嬉しいです。
                 .blog-footer
-                    // .left
-                        a(href="#").btn.btn-outline-primary 前の記事へ
                     span
                         a(href="/Programming/HTML/").btn.btn-outline-primary メニューへ戻る
                     .right
